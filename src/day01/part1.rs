@@ -2,12 +2,10 @@ pub fn solve(input: &str) -> u32 {
     input
         .lines()
         .map(|line| {
-            let mut digits = line
+            let digits = line
                 .chars()
                 .filter_map(|c| c.to_digit(10))
                 .collect::<Vec<u32>>();
-
-            println!("{:?}", digits);
 
             let first = digits.first().expect("should be a digit");
             let last = digits.last().expect("should be a digit");
@@ -25,7 +23,6 @@ mod tests {
     #[test]
     fn should_solve_riddle() {
         let input = include_str!("test_input1.txt");
-        println!("{}", input);
         assert_eq!(solve(input), 142);
     }
 }
