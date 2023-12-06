@@ -1,10 +1,10 @@
-use std::collections::{HashMap, HashSet};
+use std::collections::HashSet;
 
 pub fn solve(input: &str) -> u32 {
     let v: Vec<usize> = input
         .lines()
         .map(|line| {
-            if let Some((card_id, numbers)) = line.split_once(": ") {
+            if let Some((_card_id, numbers)) = line.split_once(": ") {
                 if let Some((winning, my)) = numbers.split_once(" |") {
                     let winning_nums: HashSet<&str> = winning.split_ascii_whitespace().collect();
                     let wins: usize = my
