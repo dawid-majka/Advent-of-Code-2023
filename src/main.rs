@@ -7,6 +7,7 @@ fn main() {
     match args.get(1).map(|s| s.as_str()) {
         Some("day01") => day01::run(),
         Some("day02") => day02::run(),
+        Some("day04") => day04::run(),
         _ => println!("Invalid argument. Specify day to run"),
     }
 }

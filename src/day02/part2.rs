@@ -34,7 +34,7 @@ mod tests {
 
     #[test]
     fn should_solve_riddle() {
-        let input = include_str!("test_input1.txt");
+        let input = include_str!("test_input2.txt");
         assert_eq!(solve(input), 2286);
     }
 }
