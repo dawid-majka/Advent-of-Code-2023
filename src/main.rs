@@ -2,6 +2,7 @@ mod day01;
 mod day02;
 mod day03;
 mod day04;
+mod day05;
 mod day06;
 mod day07;
 mod day08;
@@ -28,6 +29,7 @@ fn main() {
         Some("day02") => day02::run(),
         Some("day03") => day03::run(),
         Some("day04") => day04::run(),
+        Some("day05") => day05::run(),
         Some("day06") => day06::run(),
         Some("day07") => day07::run(),
         Some("day08") => day08::run(),
