@@ -9,6 +9,7 @@ mod day08;
 mod day09;
 mod day10;
 mod day11;
+mod day12;
 mod day13;
 mod day14;
 mod day15;
@@ -36,6 +37,7 @@ fn main() {
         Some("day09") => day09::run(),
         Some("day10") => day10::run(),
         Some("day11") => day11::run(),
+        Some("day12") => day12::run(),
         Some("day13") => day13::run(),
         Some("day14") => day14::run(),
         Some("day15") => day15::run(),
