@@ -110,16 +110,7 @@ pub fn solve(input: &str) -> usize {
     hands
         .iter()
         .enumerate()
-        .map(|(idx, hand)| {
-            println!(
-                "Hand: {}, hand_type: {},  idx: {}, bid: {}",
-                hand.cards,
-                hand.hand_type,
-                idx + 1,
-                hand.bid
-            );
-            (idx + 1) * hand.bid
-        })
+        .map(|(idx, hand)| (idx + 1) * hand.bid)
         .sum()
 }
 

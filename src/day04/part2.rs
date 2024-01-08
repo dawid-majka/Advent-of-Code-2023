@@ -40,7 +40,6 @@ mod tests {
     #[test]
     fn should_solve_riddle() {
         let input = include_str!("test_input2.txt");
-        println!("{}", input);
         assert_eq!(solve(input), 30);
     }
 }

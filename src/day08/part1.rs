@@ -7,7 +7,6 @@ pub fn solve(input: &str) -> usize {
     lines.next();
 
     let map = lines.fold(HashMap::new(), |mut acc, line| {
-        println!("{}", line);
         let (step, options) = line.split_once(" = ").unwrap();
         let options = options
             .trim_start_matches('(')

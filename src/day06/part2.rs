@@ -28,7 +28,6 @@ pub fn solve(input: &str) -> usize {
                 .unwrap()
                 .1
                 .split_ascii_whitespace()
-                .inspect(|elem| println!("{}", elem))
                 .collect();
 
             line.parse::<usize>().unwrap_or(0)

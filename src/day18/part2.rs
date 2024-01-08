@@ -44,8 +44,6 @@ pub fn solve(input: &str) -> usize {
     vertices.reverse();
     vertices.push((0, 0));
 
-    dbg!("{:?}", &vertices);
-
     let mut area = 0;
     let mut perimeter = 0;
 

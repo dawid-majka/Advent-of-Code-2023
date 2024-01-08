@@ -8,7 +8,7 @@ struct Hand {
 }
 
 pub fn solve(input: &str) -> usize {
-    let cards = "AKQT98765432J";
+    let cards = "AKQJT98765432";
 
     let mut hands: Vec<Hand> = input
         .lines()
@@ -76,16 +76,7 @@ pub fn solve(input: &str) -> usize {
     hands
         .iter()
         .enumerate()
-        .map(|(idx, hand)| {
-            println!(
-                "Hand: {}, hand_type: {},  idx: {}, bid: {}",
-                hand.cards,
-                hand.hand_type,
-                idx + 1,
-                hand.bid
-            );
-            (idx + 1) * hand.bid
-        })
+        .map(|(idx, hand)| (idx + 1) * hand.bid)
         .sum()
 }
 

@@ -2,24 +2,24 @@
 struct Hailstone {
     x: f64,
     y: f64,
-    z: f64,
+    _z: f64,
     vx: f64,
     vy: f64,
-    vz: f64,
+    _vz: f64,
     a: f64,
     b: f64,
     c: f64,
 }
 
 impl Hailstone {
-    fn new(x: f64, y: f64, z: f64, vx: f64, vy: f64, vz: f64) -> Self {
+    fn new(x: f64, y: f64, _z: f64, vx: f64, vy: f64, _vz: f64) -> Self {
         Hailstone {
             x,
             y,
-            z,
+            _z,
             vx,
             vy,
-            vz,
+            _vz,
             a: vy,
             b: -1f64 * vx,
             c: vy * x - vx * y,
